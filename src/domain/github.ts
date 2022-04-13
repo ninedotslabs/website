@@ -1,5 +1,9 @@
 export const initialStateMember: Member[] = []
 export const initialStateRepo: Repo[] = []
+// ts doens't have ADT, sheeessh
+
+export type MemberData = 'MemberData'
+export type RepoData = 'RepoData'
 
 export type Member = {
   id: number

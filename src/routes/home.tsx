@@ -1,6 +1,13 @@
-export default function Home() {
+import { memo } from 'react'
+import { Helmet } from 'react-helmet-async'
+
+export default memo(function Home() {
   return (
     <div className="home">
+      <Helmet>
+        <title>Home</title>
+        <meta name="description" content="Home" />
+      </Helmet>
       <div className="logo">
         <svg width="300" height="350" viewBox="0 -50 210 250">
           <g fill="#589bd5">
@@ -27,4 +34,4 @@ export default function Home() {
       </div>
     </div>
   )
-}
+})
