@@ -1,0 +1,121 @@
+@use "./css_utility.scss";
+@use "@fontsource/ibm-plex-sans";
+
+// var
+
+$primary-color: rgba(6, 64, 114, 1);
+$primary-color-text: rgba(255, 255, 255, 1);
+
+// reset
+
+html,
+head,
+body,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+// components
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #000e16;
+  line-height: 1.5;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+  font-weight: normal;
+}
+
+%link {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+a {
+  @extend %link;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:focus {
+  text-decoration: underline;
+}
+
+a.special-button:hover {
+  text-decoration: none;
+}
+a.special-button:focus {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15rem;
+  padding: 1rem 10rem;
+  justify-content: center;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0px;
+  padding: 1rem 0px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  border-bottom: 2px solid #000;
+  justify-content: center;
+}
+
+.container {
+	text-align: center;
+}
+
+%container-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home {
+  @extend %container-page;
+  padding: 1rem 0rem;
+  .logo {
+    max-width: 25rem;
+    padding: 1rem 6rem;
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .info {
+    max-width: 25rem;
+    padding: 5rem 2rem;
+  }
+}
+
+
+.member, .repo {
+  @extend %container-page;
+  gap: 25px;
+}
+
+.footer {
+  text-align: center;
+  padding: 5px;
+  border-top: 2px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
