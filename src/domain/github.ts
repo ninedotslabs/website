@@ -1,6 +1,4 @@
-export const initialStateMember: Member[] = []
-export const initialStateRepo: Repo[] = []
-// ts doens't have ADT, sheeessh
+// ts doesn't have ADT, sheeessh
 
 export type MemberData = 'MemberData'
 export type RepoData = 'RepoData'
@@ -13,16 +11,21 @@ export type Member = {
 }
 
 type Topics = string[]
+type Description = string | undefined
+type Homepage = string | undefined
 
 export type Repo = {
   id: number
   name: string
-  description: string | undefined
+  description: Description
   html_url: string
-  homepage: string | undefined
+  homepage: Homepage
   created_at: string
   updated_at: string
   forks: number
   watchers: number
   topics: Topics
 }
+
+export const initialStateMember: Member[] = []
+export const initialStateRepo: Repo[] = []

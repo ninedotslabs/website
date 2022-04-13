@@ -1,7 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { initialStateMember } from '../domain/github'
-import { getData } from '../usecase/github'
+import { getData } from '../controller/repo'
 import { apiGHOrgMembers } from '../utils/endpoint'
 const MemberView = lazy(() => import('../components/Member'))
 

@@ -1,7 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { initialStateRepo } from '../domain/github'
-import { getData } from '../usecase/github'
+import { getData } from '../controller/repo'
 import { apiGHOrgRepos } from '../utils/endpoint'
 const RepoView = lazy(() => import('../components/Repo'))
 
