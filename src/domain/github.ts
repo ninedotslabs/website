@@ -22,7 +22,11 @@ export type Repo = {
   homepage: Homepage
   created_at: string
   updated_at: string
+  stargazers_count: number
+  watchers_count: number
+  forks_count: number
   forks: number
+  open_issues: number
   watchers: number
   topics: Topics
 }

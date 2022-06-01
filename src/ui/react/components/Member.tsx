@@ -1,4 +1,4 @@
-import { Member } from '../domain/github'
+import { Member } from '../../../domain/github'
 
 type Props = {
   member: Member

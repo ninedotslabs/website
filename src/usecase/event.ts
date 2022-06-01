@@ -1,5 +1,3 @@
-import { Event } from '../domain/event'
-
 function getDayName(date: Date, locale: string) {
   return date.toLocaleDateString(locale, { weekday: 'long' })
 }

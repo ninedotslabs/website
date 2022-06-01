@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 
 export default memo(function About() {
   return (
-    <div className="container">
+    <div className="p-12 text-center bg-white text-dark">
       <Helmet>
         <title>About</title>
         <meta name="description" content="About" />

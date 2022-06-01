@@ -3,146 +3,330 @@
 /* padding */
 // padding all
 .p-2 {
-    padding: 10px;
+  padding: 10px;
 }
 .p-4 {
-    padding: 20px;
+  padding: 20px;
 }
 .p-6 {
-    padding: 30px;
+  padding: 30px;
 }
 .p-8 {
-    padding: 40px;
+  padding: 40px;
 }
-
+.p-10 {
+  padding: 50px;
+}
+.p-12 {
+  padding: 60px;
+}
+.p-14 {
+  padding: 70px;
+}
 
 // padding left
 .pl-2 {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 .pl-4 {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 .pl-6 {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 .pl-8 {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 // padding top
-.pl-2 {
-    padding-top: 10px;
+.pt-2 {
+  padding-top: 10px;
 }
-.pl-4 {
-    padding-top: 20px;
+.pt-4 {
+  padding-top: 20px;
 }
-.pl-6 {
-    padding-top: 30px;
+.pt-6 {
+  padding-top: 30px;
 }
-.pl-8 {
-    padding-top: 40px;
+.pt-8 {
+  padding-top: 40px;
+}
+.pt-10 {
+  padding-top: 50px;
+}
+.pt-12 {
+  padding-top: 60px;
+}
+.pt-14 {
+  padding-top: 70px;
+}
+.pt-16 {
+  padding-top: 80px;
+}
+.pt-18 {
+  padding-top: 90px;
+}
+.pt-20 {
+  padding-top: 100px;
+}
+.pt-22 {
+  padding-top: 110px;
+}
+.pt-24 {
+  padding-top: 120px;
+}
+.pt-26 {
+  padding-top: 130px;
+}
+.pt-28 {
+  padding-top: 140px;
+}
+.pt-30 {
+  padding-top: 150px;
 }
 
 // padding right
 .pr-2 {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 .pr-4 {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 .pr-6 {
-    padding-right: 30px;
+  padding-right: 30px;
 }
 .pr-8 {
-    padding-right: 40px;
+  padding-right: 40px;
 }
 
 // padding bottom
 .pb-2 {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 .pb-4 {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 .pb-6 {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 .pb-8 {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 // margin
 
 // margin all
 .m-2 {
-    margin: 10px;
+  margin: 10px;
 }
 .m-4 {
-    margin: 20px;
+  margin: 20px;
 }
 .m-6 {
-    margin: 30px;
+  margin: 30px;
 }
 .m-8 {
-    margin: 40px;
+  margin: 40px;
 }
-
 
 // padding left
 .ml-2 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .ml-4 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 .ml-6 {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 .ml-8 {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 // padding top
 .mt-2 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .mt-4 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .mt-6 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .mt-8 {
-    margin-top: 40px;
+  margin-top: 40px;
+}
+.mt-10 {
+  margin-top: 50px;
+}
+.mt-12 {
+  margin-top: 60px;
 }
 
 // padding right
 .mr-2 {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .mr-4 {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 .mr-6 {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 .mr-8 {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 // margin bottom
 .mb-2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .mb-4 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .mb-6 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .mb-8 {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+// gap
+
+.g4 {
+  gap: 4px;
+}
+
+.g20 {
+  gap: 20px;
+}
+
+.g45 {
+  gap: 45px;
+}
+
+// layout
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-jc-center {
+  justify-content: center;
+}
+
+.flex-jc-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-jc-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.w100p {
+  width: 100%;
+}
+
+.h100p {
+  height: 100%;
+}
+
+.w800 {
+  width: 800px;
+}
+
+.w1200 {
+  width: 1200px;
+}
+.mw1200 {
+  max-width: 1200px;
+}
+
+.w1440 {
+  width: 1440px;
+}
+
+.h150 {
+  height: 150px;
+}
+
+.h300 {
+  height: 300px;
+}
+
+.h600 {
+  height: 600px;
+}
+
+.h700 {
+  height: 700px;
+}
+
+.h1024 {
+  height: 1024px;
 }
 
 // font-size
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs22 {
+  font-size: 22px;
+}
+
+.fs36 {
+  font-size: 36px;
+}
+
+.fs80 {
+  font-size: 80px;
+}
+
+// text-style
+
+.text-center {
+  text-align: center;
+}
+
+.text-wrap {
+  word-wrap: break-word;
+}
+
+// overflow
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+// button
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+// li
+
+.lst-none {
+  list-style: none;
+}
