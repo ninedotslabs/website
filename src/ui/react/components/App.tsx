@@ -5,7 +5,7 @@ import NavbarView from './Navbar'
 export default function App() {
   return (
     <div>
-      <header className="h150">
+      <header>
         <NavbarView />
       </header>
       <main className="main">

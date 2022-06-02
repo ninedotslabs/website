@@ -21,13 +21,17 @@ const initialState: State = { events: [], members: [], repos: [] }
 export default memo(function Home() {
   const [state, setState] = useState(initialState)
   useEffect(() => {
-    Promise.all([
+    Promise.allSettled([
       getData(apiEvent, 'EventData'),
       getData(apiGHOrgMembers, 'MemberData'),
       getData(apiGHOrgRepos, 'RepoData')
     ])
       .then((xs) => {
-        setState({ events: xs[0], members: xs[1], repos: xs[2].reverse() })
+        setState({
+          events: xs[0].status === 'fulfilled' ? xs[0].value : [],
+          members: xs[1].status === 'fulfilled' ? xs[1].value : [],
+          repos: xs[2].status === 'fulfilled' ? xs[2].value.reverse() : []
+        })
       })
       .catch((error) => console.error(error))
   }, [])
@@ -66,19 +70,19 @@ export default memo(function Home() {
       </div>
       <div id="members" className="bg-white text-dark w100p h1024">
         <h2 className="pt-4 pl-4">Anggota Kami</h2>
-        <div className="flex flex-jc-center pt-6">
+        <div className="flex flex-wrap flex-jc-center pt-6">
           <div className="mw1200 h700 overflow-auto">
             <div className="flex flex-row flex-wrap flex-jc-center g45">
               {state.members.map((x) => (
                 <MemberView key={x.id} member={x} />
               ))}
             </div>
-            <div className="text-center pt-16">
-              <p>Tertarik untuk bergabung?</p>
-              <a href="https://discord.gg/wmVnvKSMAE">
-                <ButtonView className="bg-primary text-white">Gabung</ButtonView>
-              </a>
-            </div>
+          </div>
+          <div className="text-center pt-16">
+            <p>Tertarik untuk bergabung?</p>
+            <a href="https://discord.gg/wmVnvKSMAE">
+              <ButtonView className="bg-primary text-white">Gabung</ButtonView>
+            </a>
           </div>
         </div>
       </div>

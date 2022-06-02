@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function NavbarView() {
   return (
-    <div className="flex flex-row flex-jc-between">
+    <div className="flex flex-row flex-wrap flex-jc-between">
       <div className="flex flex-row">
         <Link to="/">
           <LogoView />
